@@ -1,0 +1,64 @@
+[ 2018-03-09T09:37:00+08:00 ] 127.0.0.1 /index.php/Admin/project/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000599s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000911s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProjectController::get() should be compatible with Think\Controller::get($name = '') D:\database\Project\working\company\origin\server\app\Admin\Controller\ProjectController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `o_project` [ RunTime:0.0422s ]
+SQL: SELECT * FROM `o_project` ORDER BY add_time asc  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `o_task` [ RunTime:0.0662s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` WHERE `is_ok` = 0 AND `project_id` = 'd47f3a6db5f95b96da6e2f01ee7cc12a' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` WHERE `is_ok` = 0 AND `project_id` = '8d799ea7e55d15eeef7f6290764d747c' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` WHERE `is_ok` = 0 AND `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` WHERE `is_ok` = 0 AND `project_id` = 'c928b14c77c0d3be11bb118ecfffa381' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000762s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000810s ]
+
+[ 2018-03-09T09:39:46+08:00 ] 127.0.0.1 /index.php/Admin/project/get?project_id=a40a7960f50c124dc52e53f61e2f0e18
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProjectController::get() should be compatible with Think\Controller::get($name = '') D:\database\Project\working\company\origin\server\app\Admin\Controller\ProjectController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `o_project` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `o_project` WHERE `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `o_paper` [ RunTime:1.1450s ]
+SQL: SELECT * FROM `o_paper` WHERE `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' ORDER BY add_time desc,sort asc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `o_task_list` [ RunTime:0.6697s ]
+SQL: SELECT * FROM `o_task_list` WHERE `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' ORDER BY sort asc  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `o_task` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `o_task` WHERE `task_list_id` = '1826f7a55df6c75c2602787e02a3d19b' AND `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `o_task` WHERE `task_list_id` = '91310f325a45f89772664cf6d28e0ecf' AND `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' ORDER BY sort asc  [ RunTime:0.0008s ]
+SQL: SELECT * FROM `o_task` WHERE `task_list_id` = 'b4e90bc6a3382d0a8cbc7d31504cbd12' AND `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' ORDER BY sort asc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `o_task` WHERE `task_list_id` = '84cba99db681f750d61b835b7c2edf08' AND `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' ORDER BY sort asc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `o_task` WHERE `task_list_id` = '0' AND `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' ORDER BY sort asc  [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000952s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001035s ]
+
+[ 2018-03-09T11:15:18+08:00 ] 127.0.0.1 /index.php/Admin/project/getList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.219416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029705s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.029777s ]
+NOTIC: [2048] Declaration of Admin\Controller\ProjectController::get() should be compatible with Think\Controller::get($name = '') D:\database\Project\working\company\origin\server\app\Admin\Controller\ProjectController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `o_project` [ RunTime:0.3503s ]
+SQL: SELECT * FROM `o_project` ORDER BY add_time asc  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `o_task` [ RunTime:0.6764s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` WHERE `is_ok` = 0 AND `project_id` = 'd47f3a6db5f95b96da6e2f01ee7cc12a' LIMIT 1   [ RunTime:0.0904s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` WHERE `is_ok` = 0 AND `project_id` = '8d799ea7e55d15eeef7f6290764d747c' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` WHERE `is_ok` = 0 AND `project_id` = 'a40a7960f50c124dc52e53f61e2f0e18' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` WHERE `is_ok` = 0 AND `project_id` = 'c928b14c77c0d3be11bb118ecfffa381' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `o_task` LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.055903s ]
+INFO: [ app_end ] --END-- [ RunTime:0.055972s ]
+

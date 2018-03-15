@@ -1,0 +1,32 @@
+.label {
+    line-height: 1;
+    padding: 3px 5px;
+    font-size: 13px;
+    border-radius: 3px;
+    // border: solid 1px #ddd;
+    background-color: #dddddd;
+    display: inline-block;
+    color: #333;
+    &.label-default {
+        background-color: #dddddd;
+    }
+    &.label-primary {
+        color: #356;
+        background-color: #e3f2f7;
+    }
+    &.label-info {
+        background-color: #dddddd;
+    }
+    &.label-success {
+        color: #fff;
+        background-color: #67C23A;
+    }
+    &.label-warning {
+        color: #fff;
+        background-color: #E6A23C;
+    }
+    &.label-danger {
+        color: #fff;
+        background-color: #F56C6C;
+    }
+}

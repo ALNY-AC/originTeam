@@ -1,0 +1,28 @@
+.left-tool {
+    position: relative;
+    &:hover {
+        &>.left-tool-box {
+            display: inline-block;
+        }
+    }
+    &>.left-tool-box {
+        position: absolute;
+        top: 0;
+        right: 100%;
+        white-space: nowrap;
+        padding: 0;
+        padding-right: 20px;
+        display: none;
+        .left-tool-list {
+            background-color: #ffffff;
+            border-radius: 10px 0 0 10px;
+            border: solid 1px #ddd;
+            border-width: 1px 0 1px 1px;
+            padding: 0 10px;
+            font-size: 0;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+    .left-view {}
+}

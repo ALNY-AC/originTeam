@@ -1,0 +1,22 @@
+.task-list {
+    position: relative;
+    margin-bottom: 20px;
+    .task-list-title {
+        color: #3e7598;
+        font-size: 18px;
+        height: 30px;
+        line-height: 30px;
+        font-weight: bold;
+        cursor: pointer;
+        &:hover {
+            color: #4395c9;
+        }
+    }
+    .task-list-info {
+        color: #999;
+        font-size: 12px;
+    }
+    .task-box {
+        padding-left: 20px;
+    }
+}

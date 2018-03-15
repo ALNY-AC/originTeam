@@ -1,0 +1,41 @@
+.panel {
+    border: solid 1px #ddd;
+    border-radius: 0;
+    box-shadow: 0 5px 15px rgba($color: #000000, $alpha: 0.1);
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    .panel-head {
+        padding: 10px;
+    }
+    .panel-body {
+        padding: 0 40px 50px;
+    }
+    .panel-footer {
+        padding: 10px;
+    }
+    &.panel-bottom {
+        background-color: #ff0000;
+        width: 98%;
+        margin: 0 auto;
+        margin-bottom: -25px;
+        cursor: pointer;
+        display: block;
+        padding: 0 30px;
+        line-height: 46px;
+        line-height: 46px;
+        font-size: 18px;
+        color: #888888;
+        background: #f9f9f9;
+        box-sizing: border-box;
+        transition: all 0.2s;
+        .panel-body {
+            padding: 0;
+        }
+        .panel-head {
+            display: none;
+        }
+        &:hover {
+            background-color: #ffffff;
+        }
+    }
+}

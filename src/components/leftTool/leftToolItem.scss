@@ -1,0 +1,10 @@
+.left-tool-item {
+    display: inline-block;
+    padding: 0 3px;
+    cursor: pointer;
+    color: #9BB6AA;
+    font-size: 16px;
+    &:hover {
+        color: #4395c9;
+    }
+}

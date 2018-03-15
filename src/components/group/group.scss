@@ -1,0 +1,15 @@
+.group {
+    margin-bottom: 30px;
+    .group-head {
+        line-height: 2.5;
+        .group-title {
+            font-size: 25px;
+            font-weight: 500;
+            display: inline-block;
+            vertical-align: middle;
+            padding-right: 10px;
+        }
+    }
+    .group-body {}
+    .group-footer {}
+}

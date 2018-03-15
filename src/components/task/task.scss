@@ -1,0 +1,70 @@
+.task {
+    position: relative;
+    width: 100%;
+    white-space: unset;
+    &:hover {
+        .tool {
+            display: block;
+        }
+        .level {}
+    }
+    &.ok {
+        .task-title {
+            color: #999;
+        }
+    }
+    .level-head {
+        position: relative;
+        display: inline-block;
+        font-size: 15px;
+    }
+    .level {
+        display: inline-block;
+        font-size: 20px;
+        vertical-align: top;
+        line-height: 1;
+        .level-item {
+            vertical-align: top;
+            position: relative;
+            margin: 0 5px;
+            cursor: pointer;
+            display: inline-block;
+        }
+    }
+    .user-img-list {
+        display: inline-block;
+        .user-img-item {
+            width: 25px;
+            height: 25px;
+            border-radius: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+    .check-box {
+        position: absolute;
+        vertical-align: top;
+        line-height: 30px;
+        cursor: pointer;
+        font-size: 20px;
+        user-select: none;
+        .no {
+            color: #b7b7b7;
+        }
+        .ok {
+            color: rgba(83, 176, 56, 0.87);
+        }
+    }
+    .task-title {
+        // display: inline-block;
+        position: relative;
+        left: 23px;
+        display: block;
+        line-height: 30px;
+        min-height: 30px;
+        cursor: pointer;
+        &:hover {
+            color: #5bc4c7;
+        }
+    }
+}

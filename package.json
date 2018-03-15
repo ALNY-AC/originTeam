@@ -1,0 +1,54 @@
+{
+  "name": "origin",
+  "description": "起源计划",
+  "version": "1.0.0",
+  "author": "艾尔尼亚-代码狮 <1173197065@qq.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server --inline --open --hot --env.dev",
+    "build": "rimraf dist && webpack -p --progress --hide-modules"
+  },
+  "dependencies": {
+    "element-ui": "^2.2.0",
+    "font-awesome-webpack": "^0.0.5-beta.2",
+    "highlight.js": "^9.12.0",
+    "jquery": "^3.3.1",
+    "marked": "^0.3.17",
+    "mavon-editor": "^2.4.16",
+    "vue": "^2.5.11",
+    "vue-router": "^3.0.1",
+    "vuedraggable": "^2.16.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^6.6.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "babel-preset-vue-app": "^1.2.0",
+    "cross-env": "^5.0.5",
+    "css-loader": "^0.28.7",
+    "file-loader": "^1.1.4",
+    "font-awesome": "^4.7.0",
+    "font-awesome-webpack": "^0.0.5-beta.2",
+    "html-webpack-plugin": "^2.30.1",
+    "less": "^3.0.1",
+    "less-loader": "^4.0.6",
+    "node-sass": "^4.7.2",
+    "postcss-loader": "^1.3.3",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.13.2",
+    "url-loader": "^0.5.8",
+    "vue-loader": "^13.0.5",
+    "vue-template-compiler": "^2.4.4",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}

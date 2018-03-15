@@ -1,0 +1,126 @@
+.project {
+    display: block;
+    border: 1px solid transparent;
+    position: relative;
+    cursor: pointer;
+    .icon-list {
+        text-align: center;
+        font-size: 0;
+        .icon-item {
+            $size: 40px;
+            width: $size;
+            height: $size;
+            line-height: $size;
+            margin: 0 auto;
+            color: #c8bfa5;
+            text-align: center;
+            display: inline-block;
+            border-radius: 5px;
+            font-size: 20px;
+            opacity: .6;
+            transition: all 0.1s ease-in-out;
+            &.bg {
+                background-color: #ece8d5;
+                opacity: 1;
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .icon {
+        color: #c8bfa5;
+    }
+    .project-title {
+        color: #333;
+        vertical-align: middle;
+        line-height: 30px;
+        height: 30px;
+    }
+    .task_count_no_ok {
+        float: right;
+        display: none;
+        .title {
+            font-size: 13px;
+        }
+        .count {
+            font-size: 20px;
+            color: #555;
+        }
+    }
+    .project-tool {
+        display: none;
+        user-select: none;
+        .tool-item {
+            vertical-align: middle;
+            padding: 0 5px;
+            color: #c8bfa5;
+            &:hover {
+                color: #F56C6C;
+            }
+        }
+    }
+    &.project-list {
+        border-bottom: solid 1px #e8e8e8;
+        border-radius: 0;
+        .icon-list {
+            width: 400px;
+            margin-top: 10px
+        }
+        .icon {
+            color: #c8bfa5;
+            font-size: 25px;
+            width: 30px;
+            vertical-align: middle;
+        }
+        .project-body {
+            padding: 0 10px;
+            .project-tool {}
+        }
+        &:hover {
+            background: #f9f9f9;
+        }
+    }
+    &.project-card {
+        width: 218px;
+        height: 150px;
+        float: left;
+        text-align: center;
+        position: relative;
+        .icon-list {
+            position: absolute;
+            width: 400px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .icon {
+            display: block;
+            width: 60px;
+            height: 60px;
+            margin: 35px auto 0;
+            font-size: 50px;
+        }
+        .project-body {
+            .project-tool {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                font-size: 15px;
+                line-height: 30px;
+            }
+        }
+        &:hover {
+            background: #f9f9f9;
+            border: 1px solid #e8e8e8;
+            border-radius: 6px;
+        }
+    }
+    &:hover {
+        .task_count_no_ok {
+            display: inline-block;
+        }
+        .project-tool {
+            display: inline-block;
+        }
+    }
+}
