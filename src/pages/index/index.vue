@@ -79,7 +79,6 @@ export default {
           //取得用户数据
           this.$get("user/getUserInfo", {}, res => {
             this.isLoading = false;
-
             if (res.res >= 1) {
               localStorage.userInfo = JSON.stringify(res.userInfo);
               this.$success("login ok");
@@ -97,8 +96,6 @@ export default {
     reg() {
       this.$post("index/reg", this.data, res => {
         this.isLoading = false;
-
-        console.log(res);
         if (res.res >= 1) {
           this.$success("reg ok");
           return;
@@ -109,6 +106,10 @@ export default {
         }
         if (res.res == -3) {
           this.$error("pwd != pwd");
+          return;
+        }
+        if (res.res == -4) {
+          this.$error("user_id Already existed");
           return;
         }
         this.$error("Interface Error");

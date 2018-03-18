@@ -47,7 +47,7 @@ export default {
     toPaper() {
       this.$router.push({
         name: "paperShow",
-        params: {
+        query: {
           paper_id: this.paper.paper_id
         }
       });

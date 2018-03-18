@@ -241,7 +241,7 @@ export default {
     goConf() {
       this.$router.push({
         name: "projectConf",
-        params: {
+        query: {
           project_id: this.project_id
         }
       });
@@ -263,12 +263,10 @@ export default {
     // 未完成任务
     getTaskCountNo() {
       var project = this.project;
-
       var count = 0;
 
       for (let i = 0; i < project.taskList.length; i++) {
         const taskList = project.taskList[i];
-
         for (let j = 0; j < taskList.tasks.length; j++) {
           const task = taskList.tasks[j];
           if (task.is_ok == 0 && task.task_title != "----") {
@@ -282,7 +280,7 @@ export default {
   mounted() {
     this.refreshBtnLoad = true;
     this.isLoadModel = true;
-    if (this.$route.params["project_id"] == null) {
+    if (this.$route.query["project_id"] == null) {
       if (localStorage.project_id == null) {
         this.$router.go(-1);
         return;
@@ -290,7 +288,7 @@ export default {
         this.project_id = localStorage.project_id;
       }
     } else {
-      this.project_id = this.$route.params["project_id"];
+      this.project_id = this.$route.query["project_id"];
     }
     localStorage.project_id = this.project_id;
     this.update();
@@ -306,6 +304,8 @@ export default {
         (this.getTaskCount() - this.getTaskCountNo()) /
         this.getTaskCount() *
         100;
+      if (isNaN(rate)) return 0;
+
       return Math.round(rate);
     },
     taskCount() {

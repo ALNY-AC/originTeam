@@ -14,6 +14,7 @@ import leftTool from "./components/leftTool/leftTool.vue";
 import leftToolItem from "./components/leftTool/leftToolItem.vue";
 import group from "./components/group/group.vue";
 import paperComp from "./components/paper/paper.vue";
+import originNav from "./components/originNav/originNav.vue";
 
 Vue.component('paper', paperComp)
 Vue.component('panel', panel)
@@ -24,7 +25,7 @@ Vue.component('task', task)
 Vue.component('group', group)
 Vue.component('o-panel', panel)
 Vue.component('o-label', label)
-// Vue.component('origin-nav', originNav)
+Vue.component('origin-nav', originNav)
 
 Vue.use(ElementUI);
 Vue.use(VueRouter);

@@ -1,167 +1,161 @@
-* {}
+ * {}
 
-body {
-    padding: 0;
-    margin: 0;
-    background-color: #f4f7ed;
-}
+ body {
+     padding: 0;
+     margin: 0;
+     background-color: #f4f7ed;
+ }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 400;
-}
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+     font-weight: 400;
+ }
 
-hr {
-    margin: 20px 0;
-    padding: 0;
-    height: 1px;
-    background-color: transparent;
-    border: none;
-    border-bottom: solid 1px #ddd;
-}
+ hr {
+     margin: 20px 0;
+     padding: 0;
+     height: 1px;
+     background-color: transparent;
+     border: none;
+     border-bottom: solid 1px #ddd;
+ }
 
-pre {
-    font-size: 14px;
-    border: solid 1px #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 0;
-    background-color: #f6f6f6;
-}
+ pre {
+     font-size: 14px;
+     border: solid 1px #ddd;
+     border-radius: 5px;
+     padding: 20px;
+     margin: 0;
+     background-color: #f6f6f6;
+ }
 
-.float-right {
-    float: right;
-}
+ .float-right {
+     float: right;
+ }
 
-.float-left {
-    float: left;
-}
+ .float-left {
+     float: left;
+ }
+ /*文本对其类*/
 
+ .text-center {
+     text-align: center;
+ }
 
-/*文本对其类*/
+ .text-left {
+     text-align: left;
+ }
 
-.text-center {
-    text-align: center;
-}
+ .text-right {
+     text-align: right;
+ }
+ /*文字大小类*/
 
-.text-left {
-    text-align: left;
-}
+ .text-sm {
+     font-size: 13px;
+ }
 
-.text-right {
-    text-align: right;
-}
+ .text-mini {
+     font-size: 12px;
+ }
 
+ .text-lg {
+     font-size: 16px;
+ }
+ /*文字颜色类*/
 
-/*文字大小类*/
+ .text-danger,
+ .text-error {
+     color: #F56C6C;
+     &.hig {
+         color: #ff4f3e;
+     }
+ }
 
-.text-sm {
-    font-size: 13px;
-}
+ .text-warning {
+     color: #E6A23C;
+     &.hig {
+         color: #ffaf38;
+     }
+ }
 
-.text-mini {
-    font-size: 12px;
-}
+ .text-success {
+     color: #67C23A;
+ }
 
-.text-lg {
-    font-size: 16px;
-}
+ .text-muted,
+ .text-info {
+     color: #909399;
+ }
 
+ .text-a {
+     color: #5bc4c7;
+ }
 
-/*文字颜色类*/
+ .text- {
+     color: #c8bfa5;
+ }
 
-.text-danger,
-.text-error {
-    color: #F56C6C;
-    &.hig {
-        color: #ff4f3e;
-    }
-}
+ .text-priority {
+     font-weight: bold;
+     color: red;
+     font-style: normal;
+ }
 
-.text-warning {
-    color: #E6A23C;
-    &.hig {
-        color: #ffaf38;
-    }
-}
+ .clearfix {
+     &:before,
+     &:after {
+         content: " ";
+         display: table;
+     }
+     &:after {
+         clear: both;
+     }
+ }
 
-.text-success {
-    color: #67C23A;
-}
+ .load-box {
+     height: 80vh;
+     text-align: center;
+     color: #c8bfa5;
+     .icon {
+         font-size: 50px;
+         vertical-align: middle;
+         line-height: 80vh;
+     }
+ }
 
-.text-muted,
-.text-info {
-    color: #909399;
-}
+ @for $i from 1 through 30 {
+     @if $i %5==0 {
+         .m-t-#{$i} {
+             margin-top: #{$i}px;
+         }
+     }
+ }
 
-.text-a {
-    color: #5bc4c7;
-}
+ @for $i from 1 through 30 {
+     @if $i %5==0 {
+         .m-b-#{$i} {
+             margin-bottom: #{$i}px;
+         }
+     }
+ }
 
-.text- {
-    color: #c8bfa5;
-}
+ @for $i from 1 through 30 {
+     @if $i %5==0 {
+         .m-l-#{$i} {
+             margin-left: #{$i}px;
+         }
+     }
+ }
 
-.text-priority {
-    font-weight: bold;
-    color: red;
-    font-style: normal;
-}
-
-.clearfix {
-    &:before,
-    &:after {
-        content: " ";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
-.load-box {
-    height: 80vh;
-    text-align: center;
-    color: #c8bfa5;
-    .icon {
-        font-size: 50px;
-        vertical-align: middle;
-        line-height: 80vh;
-    }
-}
-
-@for $i from 1 through 30 {
-    @if $i %5==0 {
-        .m-t-#{$i} {
-            margin-top: #{$i}px;
-        }
-    }
-}
-
-@for $i from 1 through 30 {
-    @if $i %5==0 {
-        .m-b-#{$i} {
-            margin-bottom: #{$i}px;
-        }
-    }
-}
-
-@for $i from 1 through 30 {
-    @if $i %5==0 {
-        .m-l-#{$i} {
-            margin-left: #{$i}px;
-        }
-    }
-}
-
-@for $i from 1 through 30 {
-    @if $i %5==0 {
-        .m-r-#{$i} {
-            margin-right: #{$i}px;
-        }
-    }
-}
+ @for $i from 1 through 30 {
+     @if $i %5==0 {
+         .m-r-#{$i} {
+             margin-right: #{$i}px;
+         }
+     }
+ }

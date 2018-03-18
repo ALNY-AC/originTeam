@@ -164,7 +164,7 @@ export default {
   mounted() {
     this.refreshBtnLoad = true;
     this.isLoadModel = true;
-    if (this.$route.params["project_id"] == null) {
+    if (this.$route.query["project_id"] == null) {
       if (localStorage.project_id == null) {
         this.$router.go(-1);
         return;
@@ -172,7 +172,7 @@ export default {
         this.project_id = localStorage.project_id;
       }
     } else {
-      this.project_id = this.$route.params["project_id"];
+      this.project_id = this.$route.query["project_id"];
     }
     localStorage.project_id = this.project_id;
     this.update();

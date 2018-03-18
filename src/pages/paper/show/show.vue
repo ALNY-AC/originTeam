@@ -88,7 +88,7 @@ export default {
     toEdit() {
       this.$router.push({
         name: "paperEdit",
-        params: {
+        query: {
           paper_id: this.paper_id
         }
       });
@@ -97,7 +97,7 @@ export default {
   mounted() {
     this.refreshBtnLoad = true;
     this.isLoadModel = true;
-    if (this.$route.params["paper_id"] == null) {
+    if (this.$route.query["paper_id"] == null) {
       if (localStorage.paper_id == null) {
         this.$router.go(-1);
         return;
@@ -105,7 +105,7 @@ export default {
         this.paper_id = localStorage.paper_id;
       }
     } else {
-      this.paper_id = this.$route.params["paper_id"];
+      this.paper_id = this.$route.query["paper_id"];
     }
     localStorage.paper_id = this.paper_id;
 

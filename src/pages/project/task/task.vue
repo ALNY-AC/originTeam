@@ -26,7 +26,7 @@ export default {
   },
   computed: {},
   mounted() {
-    if (this.$route.params["task_id"] == null) {
+    if (this.$route.query["task_id"] == null) {
       if (localStorage.task_id == null) {
         this.$router.go(-1);
         return;
@@ -34,7 +34,7 @@ export default {
         this.task_id = localStorage.task_id;
       }
     } else {
-      this.task_id = this.$route.params["task_id"];
+      this.task_id = this.$route.query["task_id"];
     }
     localStorage.task_id = this.task_id;
     this.update();

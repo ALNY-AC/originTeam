@@ -104,7 +104,7 @@ export default {
     show() {
       this.$router.push({
         name: "show",
-        params: { project_id: this.project.project_id }
+        query: { project_id: this.project.project_id }
       });
     },
 

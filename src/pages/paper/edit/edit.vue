@@ -11,21 +11,27 @@
       <div class="tool-item" @click="$router.go(-1)">
         <i class="fa fa-chevron-left"></i>
       </div>
+
       <div class="tool-item">
         <el-input @focus="testValue=paper.paper_title" v-model="paper.paper_title" @blur="save(paper,'paper_title',true,true);" @keyup.enter.native="save(paper,'paper_title',true,true)" style="width:300px" size="mini"></el-input>
       </div>
+
       <div class="float-right">
 
         <div class="tool-item">
           {{saveTitle}}
         </div>
+
         <div class="tool-item" @click="update()">
           <i :class="!refreshBtnLoad?'el-icon-refresh':'el-icon-loading'"></i>
         </div>
+
         <div class="tool-item" @click="savePaper()">
-          <i :class="isSave?'el-icon-loading':'fa fa-save'">
-          </i>
+
+          <i :class="isSave?'el-icon-loading':'fa fa-save'"></i>
+
         </div>
+
       </div>
 
     </div>
@@ -158,7 +164,7 @@ export default {
     this.$nextTick(() => {
       this.refreshBtnLoad = true;
       this.isLoadModel = true;
-      if (this.$route.params["paper_id"] == null) {
+      if (this.$route.query["paper_id"] == null) {
         if (localStorage.paper_id == null) {
           this.$router.go(-1);
           return;
@@ -166,7 +172,7 @@ export default {
           this.paper_id = localStorage.paper_id;
         }
       } else {
-        this.paper_id = this.$route.params["paper_id"];
+        this.paper_id = this.$route.query["paper_id"];
       }
       localStorage.paper_id = this.paper_id;
       this.update();

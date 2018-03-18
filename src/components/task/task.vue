@@ -165,7 +165,7 @@ export default {
     showTask() {
       this.$router.push({
         name: "task",
-        params: { task_id: this.task.task_id }
+        query: { task_id: this.task.task_id }
       });
     },
     getTaskTitle() {

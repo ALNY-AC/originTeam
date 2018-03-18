@@ -1,8 +1,11 @@
 <template>
   <div id="App" class="">
+
+    <!-- <origin-nav></origin-nav> -->
     <template>
-      <router-view></router-view>
+      <router-view class="router-view"></router-view>
     </template>
+
   </div>
 </template>
 <script>
@@ -22,4 +25,4 @@ export default {
 </style>
 <style lang="scss" scoped>
 @import "App.scss";
-</style>
+</style> 

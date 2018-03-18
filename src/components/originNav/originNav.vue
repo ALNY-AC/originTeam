@@ -1,8 +1,8 @@
 <template>
     <div class="origin-nav">
         <div class="nav-list">
-            <div class="nav-item">
-                项目
+            <div class="nav-item active">
+                project
             </div>
         </div>
     </div>
